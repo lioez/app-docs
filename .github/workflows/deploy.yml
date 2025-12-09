@@ -1,3 +1,6 @@
+name: Install rsync
+  run: sudo apt-get update && sudo apt-get install -y rsync
+
 name: Deploy MkDocs to Server
 
 on:
