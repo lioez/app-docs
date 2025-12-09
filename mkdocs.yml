@@ -1,0 +1,68 @@
+site_name: Loez 的技术文档
+
+site_description: 个人技术笔记与文章
+site_author: Loez
+
+# 主题配置（使用 Material）
+theme:
+  name: material
+  language: zh          # 中文界面
+
+  # 颜色方案（支持亮色和暗色切换）
+  palette:
+    - scheme: light
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: dark
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # 字体配置
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # 功能启用
+  features:
+    - navigation.tabs           # 顶部标签导航
+    - navigation.tabs.sticky    # 粘性标签导航
+    - navigation.top            # 回到顶部按钮
+    - search.suggest            # 搜索建议
+    - content.code.copy         # 代码复制按钮
+
+# 导航结构（自动生成或手动指定）
+nav:
+  - 首页: index.md
+  - 文档:
+    - 快速开始: ./docs/getting-started.md
+    - 我的笔记: ./docs/notes.md
+  - 博客:
+    - ./blog/first-post.md
+  - 关于: about.md
+
+# Markdown 扩展
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - attr_list                  # 支持图片/链接属性
+  - md_in_html
+
+# 搜索插件配置
+plugins:
+  - search:
+      lang: zh                  # 中文分词
+      separator: '[\s\-\u3000]' # 支持中文、英文、破折号分词
