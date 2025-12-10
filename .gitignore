@@ -1,0 +1,12 @@
+# Build output
+site/
+
+# Virtual environment
+.venv/
+
+# Editor settings
+.vscode/
+
+# Local guides (not tracked)
+livereload_usage.md
+livereload_mkdocs.py

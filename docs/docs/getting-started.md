@@ -14,3 +14,4 @@ MkDocs 是一个简单快速的 Python 文档生成器。
 
 ```bash
 mkdocs serve
+```
