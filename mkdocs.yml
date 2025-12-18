@@ -44,6 +44,7 @@ nav:
     - 我的笔记: ./docs/notes.md
   - 博客:
     - ./blog/first-post.md
+    - ./blog/2-post.md
   - 关于: about.md
 
 # Markdown 扩展
