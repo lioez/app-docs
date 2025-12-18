@@ -10,3 +10,5 @@ site/
 # Local guides (not tracked)
 livereload_usage.md
 livereload_mkdocs.py
+docs/.obsidian/
+docs/_template/
